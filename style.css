@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 28px 32px;
+    width: 700px;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 22px;
+}
+
+/* FORM */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+input {
+    padding: 11px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4facfe;
+    box-shadow: 0 0 0 2px rgba(79,172,254,0.2);
+}
+
+button {
+    grid-column: span 2;
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4facfe, #00c6ff);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+button:hover {
+    opacity: 0.95;
+}
+
+/* RESULT */
+.result {
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 14px;
+    background: #f4f6f8;
+    font-size: 15px;
+}
+
+/* BADGES */
+.risk-badge {
+    margin: 12px auto;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: white;
+    width: fit-content;
+}
+
+.risk-badge.low { background: #2ecc71; }
+.risk-badge.medium { background: #f1c40f; color:#333; }
+.risk-badge.high { background: #e74c3c; }
+
+/* FEATURE IMPORTANCE */
+.feature-box {
+    margin-top: 18px;
+    padding: 14px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.feature {
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.feature span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bar {
+    height: 9px;
+    border-radius: 6px;
+    background: #ddd;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 6px;
+}
+
+/* ERROR */
+.error {
+    grid-column: span 2;
+    color: #ff3333;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+/* HEALTH TIPS */
+.tips {
+    grid-column: span 2;
+    margin-top: 16px;
+    padding: 14px;
+    background: #e8f6ff;
+    border-left: 5px solid #4facfe;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: left;
+}
